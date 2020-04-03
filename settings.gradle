@@ -1,0 +1,12 @@
+rootProject.name = 'dbmon-multimodule'
+
+include 'model'
+include 'logging-controller'
+include 'multitenant-controller'
+include 'model'
+include 'webapp'
+include 'logging-controller'
+include 'multitenant-controller:multitenant-controller'
+findProject(':multitenant-controller:multitenant-controller')?.name = 'multitenant-controller'
+include 'multitenant-controller'
+
