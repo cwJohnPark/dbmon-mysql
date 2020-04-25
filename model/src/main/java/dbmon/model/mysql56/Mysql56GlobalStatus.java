@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Getter
-public class GlobalStatus {
+public class Mysql56GlobalStatus {
 
     @Id
     @GeneratedValue

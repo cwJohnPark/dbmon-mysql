@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Getter
-public class GlobalVariable {
+public class Mysql80GlobalVariable {
 
     @Id @GeneratedValue private Long id;
     private LocalDateTime logtime = LocalDateTime.now();

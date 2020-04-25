@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @Entity
-public class GlobalVariable {
+public class Mysql57GlobalVariable {
 
     @Id @GeneratedValue
     private Long id;

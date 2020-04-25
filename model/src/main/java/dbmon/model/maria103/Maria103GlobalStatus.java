@@ -1,4 +1,4 @@
 package dbmon.model.maria103;
 
-public class GlobalStatus {
+public class Maria103GlobalStatus {
 }

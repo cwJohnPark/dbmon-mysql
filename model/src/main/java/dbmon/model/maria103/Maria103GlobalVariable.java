@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Getter
-public class GlobalVariable {
+public class Maria103GlobalVariable {
 
     @Id @GeneratedValue
     private Long id;private String innodbForceRecovery;

@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @Entity @Getter
-public class GlobalStatus {
+public class Maria104GlobalStatus {
 
     @Id @GeneratedValue
     private Long id;

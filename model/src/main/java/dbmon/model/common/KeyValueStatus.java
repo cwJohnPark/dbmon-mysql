@@ -1,4 +1,4 @@
-package db.common;
+package dbmon.model.common;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Getter
-public class DataLocks {
+public class Mysql80DataLocks {
 
     @Id @GeneratedValue
     private Long id;
