@@ -12,8 +12,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="dbmon-multimodule.logging-controller.main" target="1.8" />
-      <module name="dbmon-multimodule.logging-controller.test" target="1.8" />
       <module name="dbmon-multimodule.main" target="1.8" />
       <module name="dbmon-multimodule.test" target="1.8" />
     </bytecodeTargetLevel>
