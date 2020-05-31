@@ -1,6 +1,8 @@
 package dbmon.gather.schedule;
 
+import dbmon.gather.multitenant.Tenant;
 import dbmon.gather.schedule.dto.JobRequest;
+import dbmon.gather.schedule.job.GatherJob;
 import dbmon.gather.schedule.job.SimpleJob;
 import dbmon.gather.schedule.service.ScheduleService;
 import lombok.RequiredArgsConstructor;
@@ -27,6 +29,15 @@ public class SchedulerDataLoader implements ApplicationListener<ContextRefreshed
         jobRequest.setRepeatCount(10);
         jobRequest.setRepeatIntervalInSeconds(30);
         scheduleService.addJob(jobRequest, SimpleJob.class);
+
+        // TODO GV, GS, lock, sysmon.. 등 잡 생성
+        // 동적으로 처리하는 방법?
+        scheduleService.addJob(JobRequest.builder()
+                .jobName("GatherJob")
+                .startDateAt(LocalDateTime.now())
+                .repeatCount(10)
+                .repeatIntervalInSeconds(30)
+                .tenant(new Tenant()).build(), GatherJob.class);
 
 //        //cron job 생성
 //        JobDataMap jobDataMap = new JobDataMap();

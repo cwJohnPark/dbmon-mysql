@@ -12,8 +12,10 @@ import java.time.LocalDateTime;
 public class Maria103GlobalVariable {
 
     @Id @GeneratedValue
-    private Long id;private String innodbForceRecovery;
-    private LocalDateTime logtime = LocalDateTime.now();private String performanceSchema;
+    private Long id;
+    private String innodbForceRecovery;
+    private final LocalDateTime logtime = LocalDateTime.now();
+    private String performanceSchema;
 
     private String sqlMode;
     private String performanceSchemaEventsWaitsHistoryLongSize;

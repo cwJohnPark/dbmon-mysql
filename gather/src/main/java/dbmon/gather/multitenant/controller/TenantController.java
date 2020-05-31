@@ -1,8 +1,8 @@
-package dbmon.gather.multitenant;
+package dbmon.gather.multitenant.controller;
 
+import dbmon.gather.multitenant.MultiTenantManager;
 import dbmon.gather.multitenant.exception.InvalidDbPropertiesException;
 import dbmon.gather.multitenant.exception.LoadDataSourceException;
-import dbmon.gather.websocket.WebSocketController;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +26,7 @@ public class TenantController {
 	 */
 	@GetMapping
 	public ResponseEntity<?> getAll() {
-		//TODO dto 제공
+		// TODO health check 제공
 		return ResponseEntity.ok(tenantManager.getTenantList());
 	}
 
@@ -61,4 +61,6 @@ public class TenantController {
 			throw new LoadDataSourceException(e);
 		}
 	}
+
+	// TODO remove tenants on the fly
 }

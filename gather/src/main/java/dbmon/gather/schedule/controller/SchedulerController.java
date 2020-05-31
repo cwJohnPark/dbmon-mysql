@@ -1,4 +1,4 @@
-package dbmon.gather.schedule.Controller;
+package dbmon.gather.schedule.controller;
 
 import dbmon.gather.schedule.job.CronJob;
 import dbmon.gather.schedule.job.SimpleJob;

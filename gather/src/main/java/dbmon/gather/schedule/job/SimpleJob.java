@@ -1,7 +1,5 @@
 package dbmon.gather.schedule.job;
 
-import dbmon.gather.websocket.handler.SimpleWebSocketHandler;
-import dbmon.gather.websocket.messagingstompwebsocket.HelloMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.JobExecutionContext;
@@ -27,7 +25,6 @@ public class SimpleJob extends QuartzJobBean {
 
         IntStream.range(0, 5).forEach(i -> {
             log.info("SimpleJob Counting - {}", i);
-
 
             try {
                 TimeUnit.SECONDS.sleep(MAX_SLEEP_IN_SECONDS);

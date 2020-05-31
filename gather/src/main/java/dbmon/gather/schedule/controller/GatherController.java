@@ -1,4 +1,4 @@
-package dbmon.gather.schedule.Controller;
+package dbmon.gather.schedule.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

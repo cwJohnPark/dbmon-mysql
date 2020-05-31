@@ -84,7 +84,7 @@ public class MultiTenantManager {
         DataSource dataSource = DataSourceBuilder.create()
                 .driverClassName(properties.getDriverClassName())
                 .url(url)
-                .driverClassName(driverClassName)
+                //.driverClassName(driverClassName)
                 .username(username)
                 .password(password)
                 .build();

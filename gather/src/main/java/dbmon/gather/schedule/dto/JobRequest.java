@@ -1,9 +1,8 @@
 package dbmon.gather.schedule.dto;
 
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import dbmon.gather.multitenant.Tenant;
+import lombok.*;
 import org.quartz.JobDataMap;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -12,6 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @ToString
+@Builder @NoArgsConstructor
 public class JobRequest {
 
     private String jobGroup = "DEFAULT";
@@ -24,4 +24,6 @@ public class JobRequest {
 
     private String cronExpression;
     private JobDataMap jobDataMap;
+
+    private Tenant tenant;
 }

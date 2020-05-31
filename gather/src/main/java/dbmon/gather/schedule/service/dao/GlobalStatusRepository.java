@@ -9,7 +9,7 @@ import javax.persistence.EntityManager;
 
 @Repository
 @RequiredArgsConstructor
-public class GlobalStatusRepository implements TargetDBRepository{
+public class GlobalStatusRepository implements TargetDBRepository {
     private final EntityManager em;
 
     @Override
